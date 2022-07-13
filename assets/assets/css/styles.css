@@ -1,18 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Lato&display=swap');
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Lato", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #47a5df;
-  --secondary-color: #ff35a1;
+  --bg-color: #202020;
+  --primary-color: #A2D2FF;
+  --secondary-color: #FFAFCC;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
+  --left-margin: 10rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
@@ -61,6 +62,7 @@ nav {
 }
 
 nav h1 {
+  font-family:"Edu VIC WA NT Beginner", cursive;
   color: var(--primary-color);
 }
 
@@ -91,6 +93,26 @@ nav ul li {
   display: none;
 }
 
+.home {
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h2 {
+  font-family:"Edu VIC WA NT Beginner", cursive;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+span{
+  color: var(--secondary-color);
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -103,6 +125,7 @@ nav ul li {
 .hero img {
   height: 37.5rem;
   width: 28.5rem;
+  border-radius: 500px;
 }
 
 .bio {
