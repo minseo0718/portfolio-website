@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en"> 
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -34,6 +35,7 @@
     <nav>
       <h1>Minseo Kim</h1>
       <ul class="navigation">
+        <li><a href="#home" class="nave-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -43,6 +45,22 @@
         <ion-icon class="bars" name="menu-outline"></ion-icon>
       </button>
     </nav>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="container">
+          <h2> I am passionate about <span class="auto-type"></span></h2>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+          var typed = new Typed(".auto-type", {
+              strings: ["UI/UX", "prblem-solving", "coding"], 
+              typeSpeed: 150,
+              backSpeed: 150, 
+              loop: true
+            })
+        </script>
+    </section>
 
     <!-- Hero Section -->
     <section class="hero" id="about">
@@ -131,7 +149,7 @@
     </section>
 
     <!-- Projects section -->
-    <section class="projects" id="projects">
+    <!-- <section class="projects" id="projects">
       <h2 class="projects-title">Some of my Recent Projects</h2>
       <div class="projects-container">
         <div class="project-container project-card">
@@ -180,7 +198,7 @@
           <a href="#" target="_blank" class="project-link">Check it Out</a>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Contact section -->
     <section class="contact" id="contact">
