@@ -146,6 +146,7 @@ span{
 
 .more-about {
   background-color: var(--bg-color);
+  color: #fff;
   padding: 1rem 6rem;
 }
 
@@ -159,14 +160,113 @@ span{
   padding: 0.4rem;
 }
 
+/* skills section */
+
 .skills {
-  max-width: 68.75rem;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  /* max-width: 68.75rem;
   margin: auto;
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 2.5rem; */
 }
-
-.skill-header {
+.skills h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 16px;  
+}
+.progress-bar {
+  background: #959595;
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+}
+.progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+}
+.progress-bar span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.java {
+  background: blue;
+  animation: java 1s linear forwards;
+}
+.html {
+  background: blue;
+  animation: html 1s linear forwards;
+}
+.css {
+  background: blue;
+  animation: css 1s linear forwards;
+}
+.javascript {
+  background: blue;
+  animation: javascript 1s linear forwards;
+}
+.mysql {
+  background: blue;
+  animation: mysql 1s linear forwards;
+}
+.java span{
+  border: 1px solid blue;
+}
+.html span{
+  border: 1px solid blue;
+}
+.css span{
+  border: 1px solid blue;
+}
+.javascript span{
+  border: 1px solid blue;
+}
+.mysql span{
+  border: 1px solid blue;
+}
+@keyframes java {
+  100%{
+    width: 86%
+  }  
+}
+@keyframes html {
+  100%{
+    width: 86%
+  }  
+}
+@keyframes css {
+  100%{
+    width: 86%
+  }  
+}
+@keyframes javascript {
+  100%{
+    width: 86%
+  }  
+}
+@keyframes mysql {
+  100%{
+    width: 86%
+  }  
+}
+/* .skill-header {
   margin-bottom: 1rem;
 }
 
@@ -185,7 +285,7 @@ span{
   box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
   margin: 10px;
-}
+} */
 
 .projects {
   background-color: var(--bg-color);
