@@ -46,6 +46,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+ 
 }
 
 nav {
@@ -399,20 +400,20 @@ span{
 
 /* mobile version */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   nav {
-    width: 100%;
+    padding: 1.5rem 1rem;
   }
   nav ul {
     position: fixed;
-    background-color: #A2D2FF;
+    background-color: var(--bg-color);
     flex-direction: column;
     top: 86px;
     left: 10%;
     width: 80%;
     text-align: center;
     transform: translateX(120%);
-    transition: transfrom 0.5s ease-in;
+    transition: transform 0.3s ease-in;
   }
   nav ul li {
     margin: 8px;
@@ -421,7 +422,7 @@ span{
     display: block;
   }
   nav ul.show {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 
   
