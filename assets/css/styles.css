@@ -6,7 +6,7 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #202020;
+  --bg-color: #2a2a2a;
   --primary-color: #A2D2FF;
   --secondary-color: #FFAFCC;
   --primary-shadow: #8b8eaf;
@@ -46,7 +46,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  background-color: #202020;
+  background-color: var(--bg-color);
  
 }
 
@@ -58,7 +58,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 3.5rem;
+  padding: 1.3rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -97,7 +97,7 @@ nav ul li {
 
 .home {
   width: 100%;
-  height: 30vh;
+  height: 27vh;
   background: var(--bg-color);
   color: #fff;
   display: flex;
@@ -123,7 +123,7 @@ span{
 }
 
 .info h2 {
-  font-size: 40px;
+  font-size: 45px;
   font-family: var(--font-family);
   color: #fff;
 }
@@ -155,9 +155,22 @@ span{
 .img-box img{
   height: 77%;
   position: absolute;
-  left: 40%;
+  left: 45%;
   bottom: 0;
   transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img{
+  bottom: 40px;
+}
+
+.img-box:hover .back-back-img{
+  bottom: 40px;
+}
+
+.img-box:hover .main-img{
+  left: 54%;
 }
 
 /* .hero {
