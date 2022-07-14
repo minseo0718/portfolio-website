@@ -46,6 +46,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  background-color: #202020;
  
 }
 
@@ -96,7 +97,7 @@ nav ul li {
 
 .home {
   width: 100%;
-  height: 100vh;
+  height: 30vh;
   background: var(--bg-color);
   color: #fff;
   display: flex;
@@ -106,7 +107,7 @@ nav ul li {
 
 .home h2 {
   font-family:"Edu VIC WA NT Beginner", cursive;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
 }
 
@@ -114,7 +115,52 @@ span{
   color: var(--secondary-color);
 }
 
-.hero {
+.info {
+  background: var(--bg-color);
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-bottom: 20%;
+}
+
+.info h2 {
+  font-size: 40px;
+  font-family: var(--font-family);
+  color: #fff;
+}
+
+.info p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: -1%;
+}
+
+.info a {
+  background: #8b8eaf;
+  padding: 8px 7px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.img-box{
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.img-box img{
+  height: 77%;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* .hero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +173,7 @@ span{
   height: 37.5rem;
   width: 28.5rem;
   border-radius: 500px;
-}
+} */
 
 .bio {
   width: 25rem;
@@ -208,63 +254,63 @@ span{
   justify-content: center;
 }
 .java {
-  background: blue;
+  background: #FF99C8;
   animation: java 1s linear forwards;
 }
 .html {
-  background: blue;
+  background: #FCF6BD;
   animation: html 1s linear forwards;
 }
 .css {
-  background: blue;
+  background: #D0F4DE;
   animation: css 1s linear forwards;
 }
 .javascript {
-  background: blue;
+  background: #A9DEF9;
   animation: javascript 1s linear forwards;
 }
 .mysql {
-  background: blue;
+  background: #E4C1F9;
   animation: mysql 1s linear forwards;
 }
 .java span{
-  border: 1px solid blue;
+  border: 1px solid #FF99C8;
 }
 .html span{
-  border: 1px solid blue;
+  border: 1px solid #FCF6BD;
 }
 .css span{
-  border: 1px solid blue;
+  border: 1px solid #D0F4DE;
 }
 .javascript span{
-  border: 1px solid blue;
+  border: 1px solid #A9DEF9;
 }
 .mysql span{
-  border: 1px solid blue;
+  border: 1px solid #E4C1F9;
 }
 @keyframes java {
   100%{
-    width: 86%
+    width: 65%
   }  
 }
 @keyframes html {
   100%{
-    width: 86%
+    width: 30%
   }  
 }
 @keyframes css {
   100%{
-    width: 86%
+    width: 30%
   }  
 }
 @keyframes javascript {
   100%{
-    width: 86%
+    width: 10%
   }  
 }
 @keyframes mysql {
   100%{
-    width: 86%
+    width: 80%
   }  
 }
 /* .skill-header {
