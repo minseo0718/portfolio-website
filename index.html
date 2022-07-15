@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,9 +7,16 @@
 
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Favicons -->
-    <link
+    <!-- <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/icons/apple-touch-icon.png"
@@ -19,7 +26,7 @@
       type="image/png"
       sizes="32x32"
       href="assets/icons/favicon-32x32.png"
-    />
+    /> -->
 
     <!-- Animate CSS CDN -->
     <link
@@ -30,15 +37,15 @@
   </head>
 
   <body>
-
     <!-- Navbar -->
     <nav>
-      <h1>Minseo Kim</h1>
+      <a href="#top"><h1>Minseo Kim</h1></a>
       <ul class="navigation">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
+        <!-- <li><a href="#home" class="nav-link">Home</a></li> -->
+        <li><a href="#top" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <button class="burger-menu" id="burger-menu">
@@ -49,44 +56,67 @@
     <!-- Home Section -->
     <section class="home" id="home">
       <div class="container">
-        <h2> I am passionate about <span class="auto-type"></span></h2>
+        <h2>I am passionate about <span class="auto-type"></span></h2>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <script>
-          var typed = new Typed(".auto-type", {
-              strings: ["UI/UX", "prblem-solving", "coding"], 
-              typeSpeed: 150,
-              backSpeed: 70, 
-              loop: true
-            })
-        </script>
+        var typed = new Typed(".auto-type", {
+          strings: ["UI/UX", "prblem-solving", "coding"],
+          typeSpeed: 150,
+          backSpeed: 70,
+          loop: true,
+        });
+      </script>
     </section>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
+    <!-- About Section -->
+    <section class="about" id="about">
       <div class="info">
-        <h2>I'm <span>Minseo</span> Kim, <br> an innovative developer</h2>
-        <p>Welcome to my portfolio website!<br>Hello</p>
-        <a href="">Download Resume</a>
+        <h2>
+          I'm <span>Minseo</span> Kim, <br />
+          an enthusiastic developer
+        </h2>
+        <p>
+          Welcome to my portfolio website!<br />
+          <br />
+          I'm a second year student studying Human-Centered <br />Design and
+          Development at Penn State University. <br /><br />
+          I like UI/UX, programming, and website developing.
+          <br />
+          Developnig a user-friendly website is my recent passion!
+        </p>
+        <a href="assets/files/Minseo_Kim_Resume.docx">Download Resume</a>
       </div>
 
       <div class="img-box">
-        <img src="assets/images/pink_background.png" alt="" class="back-back-img">
-        <img src="assets/images/psu_logo.png" alt="Penn State logo" class="back-img">
-        <img src="assets/images/minseo_nobackground_2.png" alt="Picture of Minseo" class="main-img">
+        <img
+          src="assets/images/pink_background.png"
+          alt=""
+          class="back-back-img"
+        />
+        <img
+          src="assets/images/psu_logo.png"
+          alt="Penn State logo"
+          class="back-img"
+        />
+        <img
+          src="assets/images/minseo_nobackground_2.png"
+          alt="Picture of Minseo"
+          class="main-img"
+        />
       </div>
-      <!-- <img
-        src="assets/images/minseo_newyork.jpg"
-        alt="Minseo in front of the Statue of Liberty"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          I am a first year student at Penn State University!
-        </p>
-      </div> -->
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/minseo-kim0718/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/minseo0718"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/minseo0718/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
     </section>
 
     <!-- More about -->
@@ -111,204 +141,131 @@
     <!-- Skills section -->
     <section class="skills" id="skills">
       <div class="skills-wrapper">
-          <h2 class="Java">Java</h2>
-          <div class = "progress-bar">
-            <div class="java"><span>65%</span></div>
-          </div>
-          <h2 class="HTML">HTML</h2>
-          <div class = "progress-bar">
-            <div class="html"><span>30%</span></div>
-          </div>
-          <h2 class="CSS">CSS</h2>
-          <div class = "progress-bar">
-            <div class="css"><span>30%</span></div>
-          </div>
-          <h2 class="JavaScript">JavaScript</h2>
-          <div class = "progress-bar">
-            <div class="javascript"><span>10%</span></div>
-          </div>
-          <h2 class="MySQL">MySQL</h2>
-          <div class = "progress-bar">
-            <div class="mysql"><span>80%</span></div>
-          </div>
+        <h2>My Top Skills</h2>
+        <h3 class="Java">Java</h3>
+        <div class="progress-bar">
+          <div class="java"><span>65%</span></div>
+        </div>
+        <h3 class="HTML">HTML</h3>
+        <div class="progress-bar">
+          <div class="html"><span>30%</span></div>
+        </div>
+        <h3 class="CSS">CSS</h3>
+        <div class="progress-bar">
+          <div class="css"><span>30%</span></div>
+        </div>
+        <h3 class="JavaScript">JavaScript</h3>
+        <div class="progress-bar">
+          <div class="javascript"><span>10%</span></div>
+        </div>
+        <h3 class="MySQL">MySQL</h3>
+        <div class="progress-bar">
+          <div class="mysql"><span>80%</span></div>
+        </div>
       </div>
-
-      <!-- <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-java.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-mysql-logo.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          /> -->
-          <!-- <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          /> -->
-        <!-- </div>
-        <a target="_blank" href="https://icons8.com/icon/13679/java">Java icon by Icons8</a>
-        <a href="https://icons8.com/icon/9nLaR5KFGjN0/mysql-logo">MySQL Logo icon by Icons8</a> -->
-
-        <!-- <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-react-native.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div> 
-      </div> -->
     </section>
 
     <!-- Projects section -->
-    <!-- <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
+    <section class="projects" id="projects">
+      <div class="projects-wrapper">
+        <h2>My Projects</h2>
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="timeline-content">
+                <h3>Heading 1</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium natus illo impedit, nemo, magni aspernatur,
+                  expedita quasi assumenda corrupti pariatur reprehenderit
+                  deleniti vero aliquid obcaecati. Dolorem aspernatur
+                  dignissimos quae eveniet!
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3>Heading 2</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium natus illo impedit, nemo, magni aspernatur,
+                  expedita quasi assumenda corrupti pariatur reprehenderit
+                  deleniti vero aliquid obcaecati. Dolorem aspernatur
+                  dignissimos quae eveniet!
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3>Heading 3</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium natus illo impedit, nemo, magni aspernatur,
+                  expedita quasi assumenda corrupti pariatur reprehenderit
+                  deleniti vero aliquid obcaecati. Dolorem aspernatur
+                  dignissimos quae eveniet!
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitter-circled.gif"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
+    <!-- Gallery Section -->
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <div class="contact-wrapper">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer section -->
 
