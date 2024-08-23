@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/images/minseo_nobackground_2.png">
+    <link rel="icon" href="./assets/images/minseo_nobackground_2.png" />
 
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -32,6 +32,7 @@
         <!-- <li><a href="#home" class="nav-link">Home</a></li> -->
         <li><a href="#top" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#work" class="nav-link">Work Experience</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -49,7 +50,12 @@
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <script>
         var typed = new Typed(".auto-type", {
-          strings: ["UI/UX", "prblem-solving", "coding"],
+          strings: [
+            "Machine Learning",
+            "Data",
+            "Programming",
+            "Problem Solving",
+          ],
           typeSpeed: 150,
           backSpeed: 70,
           loop: true,
@@ -61,18 +67,26 @@
     <section class="about" id="about">
       <div class="info">
         <h2>
-          I'm <span>Minseo</span> Kim, <br />
-          an enthusiastic learner
+          I'm <span>Minseo</span> Kim, <br/> an engineer who loves <br />
+          <span>Data</span>, <span>AI/ML</span>, and
+          <span>Programming</span>
         </h2>
         <p>
           Welcome to my portfolio website!<br />
           <br />
-          I'm a junior studying Computational Data Sciences <br /> at Penn State College of Engineering. <br /><br />
-          
+          I'm a senior majoring in Computational Data Science <br />
+          and minoring in Mathematics at Penn State College of Engineering.
+          <br />
+          <br />
+          I have experiences in developing and optimizing machine learning
+          models, <br />
+          cloud-based applications, and data-driven solutions
+          <br />
         </p>
-        <a href="assets/files/Minseo_Kim_Resume.pdf">Download Resume</a>
+        <a href="assets/files/Minseo_Kim_Resume_SU24_2.pdf" target="_blank" style="color:black"
+          >Download Resume</a
+        >
       </div>
-
 
       <div class="img-box">
         <img
@@ -99,10 +113,10 @@
         <a href="https://github.com/minseo0718"
           ><i class="fa-brands fa-github"></i
         ></a>
-        <a href="https://www.instagram.com/minseokim0718/"
+        <!-- <a href="https://www.instagram.com/minseokim0718/"
           ><i class="fa-brands fa-instagram"></i
-        ></a>
-          </div>
+        ></a> -->
+      </div>
     </section>
 
     <!-- Skills section -->
@@ -110,25 +124,121 @@
       <div class="skills-wrapper">
         <h2>My Top Skills</h2>
         <p>Refresh the page to see the animation!</p>
+        <h3 class="Python">Python</h3>
+        <div class="progress-bar">
+          <div class="python"><span>90%</span></div>
+        </div>
         <h3 class="Java">Java</h3>
         <div class="progress-bar">
-          <div class="java"><span>65%</span></div>
-        </div>
-        <h3 class="HTML">HTML</h3>
-        <div class="progress-bar">
-          <div class="html"><span>30%</span></div>
-        </div>
-        <h3 class="CSS">CSS</h3>
-        <div class="progress-bar">
-          <div class="css"><span>30%</span></div>
+          <div class="java"><span>75%</span></div>
         </div>
         <h3 class="JavaScript">JavaScript</h3>
         <div class="progress-bar">
-          <div class="javascript"><span>10%</span></div>
+          <div class="javascript"><span>65%</span></div>
         </div>
-        <h3 class="MySQL">MySQL</h3>
+        <h3 class="MySQL">SQL</h3>
         <div class="progress-bar">
           <div class="mysql"><span>80%</span></div>
+        </div>
+        <h3 class="R">R</h3>
+        <div class="progress-bar">
+          <div class="r"><span>50%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience section -->
+    <section class="work" id="work">
+      <div class="work-wrapper">
+        <h2>Work Experience</h2>
+        <div class="timeline-container">
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="timeline-content">
+                  <h3>Generative AI Engineer Intern</h3>
+                  <h4>
+                    CentralReach <br />
+                    (05/2024 - 08/2024)
+                  </h4>
+                  <p>
+                    As a summer intern, I developed a text extraction tool using
+                    JavaScript and Node.js, resulting in a 99% time efficiency
+                    gain. Working directly with the Head of AI, and senior
+                    software engineers was a great experience. Also, going to
+                    the office in New Jesersy to join a Hackathon was
+                    unforgettable! <br />
+                    <a
+                      href="assets/files/Minseo_Kim_Resume_SU24_2.pdf"
+                      target="_blank"
+                      >Learn More in My Resume</a
+                    >
+                  </p>
+                </div>
+                <img
+                  src="./assets/images/centralReach.JPG"
+                  class="work-image"
+                  alt="CentralReach Office"
+                />
+              </li>
+              <li>
+                <div class="timeline-content">
+                  <h3>Data Science Intern</h3>
+                  <h4>
+                    Penn State Nittany AI Alliance <br />
+                    (01/2024 - 08/2024)
+                  </h4>
+                  <p>
+                    Our team, BOSS, worked with Penn State Bryce Jorden Center
+                    State to develope a machine learning model that predicts the
+                    ticket sales. I Improved the ML model's performance using
+                    the XGBoost and regression, through data modification and
+                    hyperparameter tuning. As a result of a successful project,
+                    we received free tickets to Drake concert!
+                    <br />
+                    <a
+                      href="assets/files/Minseo_Kim_Resume_SU24_2.pdf"
+                      target="_blank"
+                      >Learn More in My Resume</a
+                    >
+                  </p>
+                </div>
+                <img
+                  src="./assets/images/boss.JPG"
+                  class="work-image-2"
+                  alt="CentralReach Office"
+                />
+              </li>
+              <li>
+                <div class="timeline-content">
+                  <h3>Data Visualization Analyst Intern</h3>
+                  <h4>
+                    Navy Federal Credit Union <br />
+                    (05/2023 - 08/2023)
+                  </h4>
+                  <p>
+                    Getting my first internship was exciting! I worked at NCFU
+                    as a summer intern after my sophomore year. I Created an
+                    interactive data visualization report on Fintech Usage and a
+                    menu page, utilizing Microsoft Power BI and Azure
+                    Databricks. Also, our team won first place in the intern
+                    competition!
+                    <br />
+                    <a
+                      href="assets/files/Minseo_Kim_Resume_SU24_2.pdf"
+                      target="_blank"
+                      >Learn More in My Resume</a
+                    >
+                  </p>
+                </div>
+                <img
+                  src="./assets/images/nfcu2.jpg"
+                  class="work-image-2"
+                  alt="CentralReach Office"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -137,51 +247,120 @@
     <section class="projects" id="projects">
       <div class="projects-wrapper">
         <h2>My Projects</h2>
-        <div class="timeline-container">
-          <div class="timeline">
-            <ul>
-              <li>
-                <div class="timeline-content">
-                  <h3>Retrack</h3>
-                  <p>
-                    Academic Project (09/2021 - 12/2021) <br>
-                    <br>
-                    As a group, we defined a recycling problem and formulated solutions to help people to recycle better with technology.
-                    We created User Personas, Scenarios, Use Case Diagram, Task Analysis, and QOC Design Rationale and built a low-fidelity PowerPoint prototype of an application called ReTrack as a group.
+        <p>Click on the project title to learn more!</p>
+        <div class="card-container">
+          <ul>
+            <li>
+              <div class="card-content">
+                <h3>Statistical Learning Projects</h3>
+                <h4 style="color: #fcf6bd">
+                  Academic Project (08/2023 - 12/2023)
+                </h4>
+                <p>
+                  <a
+                    href="https://drive.google.com/drive/folders/1iV9lGEoW48jOWtbJAHnETx7tBe7v5GBS?usp=sharing" target="_blank"
+                    >Learn More!</a
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="card-content">
+                <h3>Course Enrollment Scheduler Project</h3>
+                <h4 style="color: #fcf6bd">
+                  Academic Project (08/2023 - 12/2023)
+                </h4>
+                <p>
+                  <a href="https://www.youtube.com/watch?v=KrN-yxxsFm4&t=1s"
+                    >Learn More!</a
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="card-content">
+                <h3>
+                  LionFoodTracker: An app that analyzes food waste at
+                  universities
+                </h3>
+                <h4 style="color: #d0f4de">
+                  Nittany AI Challenge (01/2023 - 04/2023)
+                </h4>
+                <p>
+                  My colleague and I are creating a website for a local food
+                  business by students while self-learning HTML, CSS, and
+                  JavaScript. We are improving the order process from chatting
+                  with customers through social media to getting order emails by
+                  utilizing Formspree.
 
-                    <a href="https://drive.google.com/drive/folders/1iV9lGEoW48jOWtbJAHnETx7tBe7v5GBS?usp=sharing">Learn More!</a>
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-content">
-                  <h3>Hello World: A tool for visually impaired individuals</h3>
-                  <p>
-                    Nittany AI Challenge Project (01/2022 - 03/2022) <br>
-                    <br>
-                    We Developed a browser tool prototype helping visually impaired individuals to engage in online shopping more fully
-	                  and I conducted user experience research and designed a prototype utilizing Adobe XD.
-                    We won the idea phase as one of the top 20 teams among 40 teams and received $500 to solve global issue using AI and technology.
+                  <a href="https://mynameisandynicetomeetyou.on.drv.tw/longxia/"
+                    >View Project</a
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="card-content">
+                <h3>Chatbot</h3>
+                <h4 style="color: #fcf6bd">
+                  Academic Project (08/2022 - 12/2022)
+                </h4>
+                <p>
+                  As a group, we defined a recycling problem and formulated
+                  solutions to help people to recycle better with technology. We
+                  created User Personas, Scenarios, Use Case Diagram, Task
+                  Analysis, and QOC Design Rationale and built a low-fidelity
+                  PowerPoint prototype of an application called ReTrack as a
+                  group.
 
-                    <a href="https://www.youtube.com/watch?v=KrN-yxxsFm4&t=1s">Learn More!</a>
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-content">
-                  <h3>Longxia: Website for a local food business</h3>
-                  <p>
-                    Personal Project (07/2022 - Present) <br>
-                    <br>
-                    My colleague and I are creating a website for a local food business by students while self-learning HTML, CSS, and JavaScript.
-                    We are improving the order process from chatting with customers through social media to getting order emails by utilizing Formspree.
-                    
-                    <a href="https://mynameisandynicetomeetyou.on.drv.tw/longxia/">Learn More!</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
+                  <a
+                    href="https://drive.google.com/drive/folders/1iV9lGEoW48jOWtbJAHnETx7tBe7v5GBS?usp=sharing"
+                    >Learn More!</a
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="card-content">
+               <h3>
+                  <a href="https://mynameisandynicetomeetyou.on.drv.tw/longxia/" style="color: inherit;">
+                    Longxia: Website for a local food business
+                  </a>
+                </h3>
+                <h4 style="color: #e4c1f9">
+                  Personal Project (07/2022 - 08/2022)
+                </h4>
+                  <br />
+                  <p> <span>Problem:</span> Inefficient order process through social media chats of a local food business <br/>
+                    <span>Solution:</span> A website that allows customers to order food online, and the business owner to receive order emails </p>
+                  <br />
+                  <a href="https://mynameisandynicetomeetyou.on.drv.tw/longxia/"
+                    >View Project Website</a
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="card-content">
+                <h3>Hello World: A tool for visually impaired individuals</h3>
+                <h4 style="color: #d0f4de">
+                  Nittany AI Challenge (01/2022 - 03/2022)
+                </h4>
+                <p>
+                  We Developed a browser tool prototype helping visually
+                  impaired individuals to engage in online shopping more fully
+                  and I conducted user experience research and designed a
+                  prototype utilizing Adobe XD. We won the idea phase as one of
+                  the top 20 teams among 40 teams and received $500 to solve
+                  global issue using AI and technology.
+
+                  <a href="https://www.youtube.com/watch?v=KrN-yxxsFm4&t=1s"
+                    >Learn More!</a
+                  >
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

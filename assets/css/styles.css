@@ -12,7 +12,7 @@
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
+  --bottom-margin-2: 1.5rem;
   --left-margin: 10rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
@@ -39,13 +39,12 @@ ul {
 }
 
 a {
-  text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 a:hover {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 body {
@@ -161,15 +160,15 @@ span{
 }
 
 .img-box{
-  width: 44%;
-  height: 77%;
+  width: 33%;
+  height: 68%;
   position: absolute;
-  bottom: 10%;
-  right: 100px;
+  bottom: 17%;
+  right: 135px;
 }
 
 .img-box img{
-  height: 70%;
+  height: 68%;
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -191,7 +190,7 @@ span{
 
 .social-links{
   margin-left: 8%;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .social-links a{
@@ -260,13 +259,13 @@ span{
   background: #FF99C8;
   animation: java 1s linear forwards;
 }
-.html {
+.python {
   background: #FCF6BD;
-  animation: html 1s linear forwards;
+  animation: python 1s linear forwards;
 }
-.css {
+.r {
   background: #D0F4DE;
-  animation: css 1s linear forwards;
+  animation: r 1s linear forwards;
 }
 .javascript {
   background: #A9DEF9;
@@ -279,10 +278,10 @@ span{
 .java span{
   border: 1px solid #FF99C8;
 }
-.html span{
+.python span{
   border: 1px solid #FCF6BD;
 }
-.css span{
+.r span{
   border: 1px solid #D0F4DE;
 }
 .javascript span{
@@ -293,22 +292,22 @@ span{
 }
 @keyframes java {
   100%{
-    width: 65%
+    width: 75%
   }  
 }
-@keyframes html {
+@keyframes python {
   100%{
-    width: 30%
+    width: 90%
   }  
 }
-@keyframes css {
+@keyframes r {
   100%{
-    width: 30%
+    width: 50%
   }  
 }
 @keyframes javascript {
   100%{
-    width: 10%
+    width: 65%
   }  
 }
 @keyframes mysql {
@@ -317,16 +316,15 @@ span{
   }  
 }
 
-/* project section */
-
-.projects h2 {
+/* work section */
+.work h2 {
   text-align: center;
   color: #fff;
   line-height: var(--line-height);
   margin-bottom: var(--bottom-margin-2);
 }
 
-.projects {
+.work {
   width: 100%;
   min-height: 100vh;
   background-color: var(--bg-color);
@@ -337,19 +335,27 @@ span{
   padding: 100px 0;
 }
 
-.timeline{
-  width: 85%;
-  height: auto;
-  max-width: 800px;
+.timeline {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
 
-.timeline ul li{
-  padding: 20px;
-  background-color:#959595;
+.timeline ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline ul li {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Pushes the image to the right */
+  padding: 18px;
+  background-color: #656565;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Increased margin to create space between items */
   position: relative;
 }
 
@@ -357,18 +363,52 @@ span{
   margin-bottom: 0;
 }
 
-.timeline-content h3 {
-  font-size: 25px;
-  font-weight: 500px;
-  line-height: 30px;
+.timeline-header {
   margin-bottom: 10px;
-  color: var(--primary-color);
 }
 
-.time-line-content p {
-  font-size:16px;
-  line-height: 30px;
+.timeline-content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+  color: var(--primary-color);
+  font-style: strong;
+}
+
+.timeline-content h4 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 5px 0;
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.timeline-content {
+  flex: 1; /* Allows the content to take up remaining space */
+}
+
+.timeline-content p {
+  font-size: 17px;
+  line-height: 1.3;
   font-weight: 300;
+}
+
+.work-image {
+  width: 250px; 
+  height: auto;
+  margin-left: 20px; /* Adds space between the text and the image */
+  border-radius: 10px;
+  align-self: flex-end;
+}
+
+.work-image-2 {
+  width: 200px; 
+  height: auto;
+  margin-left: 20px; /* Adds space between the text and the image */
+  border-radius: 10px;
+  align-self: flex-end;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
@@ -427,6 +467,101 @@ span{
     background-color: var(--primary-color);
   }
 }
+
+/* project section */
+.projects h2 {
+  text-align: center;
+  color: #fff;
+  line-height: var(--line-height);
+  margin-bottom: var(--bottom-margin);
+}
+
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.projects p {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Container for the cards */
+.card-container {
+  width: 100%;
+  max-width: 1200px; /* Limit the width of the cards */
+  margin: 0 auto;
+  position: relative; 
+  display: flex; /* Use flexbox for card layout */
+  flex-wrap: wrap; /* Allow wrapping to next line if needed */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the cards */
+}
+
+/* Style for each card item */
+.card-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for card layout */
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Wrap items to the next line */
+}
+
+.card-container ul li {
+  flex: 1 1 calc(33.333% - 20px); /* Three cards per row, adjust space for gaps */
+  padding: 20px;
+  background-color: #959595;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for card effect */
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Ensure no margin on last item */
+.card-container ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Styling for the card content */
+.card-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card-content h3:hover {
+  color: var(--secondary-color);
+}
+.card-content h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-style: italic;
+}
+
+.card-content p {
+  text-align: left;
+  font-size: 17px; /* Adjusted for better fit */
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+.card-content a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* contact section */
 
 .contact {
   width: 100%;
