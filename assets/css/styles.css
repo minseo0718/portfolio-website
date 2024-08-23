@@ -518,7 +518,7 @@ span{
 .card-container ul li {
   flex: 1 1 calc(33.333% - 20px); /* Three cards per row, adjust space for gaps */
   padding: 20px;
-  background-color: #959595;
+  background-color: #656565;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for card effect */
   position: relative;
@@ -583,7 +583,7 @@ span{
   padding: 0.938rem;
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--primary-shadow);
-  background-color: #959595;
+  background-color: #656565;
 }
 
 .contact-form-container label {
