@@ -11,108 +11,65 @@
     <h1>Image Gallery</h1>
 
     <div class="card-container">
-        <!-- 25 image cards -->
+        <!-- Image cards -->
         <div class="card">
-            <img src="assets/images/minseo_newyork.jpg" alt="Image 1">
-            <div class="card-text">Image 1</div>
+            <img src="assets/images/gallery-images/IMG_0538.jpg" alt="Image 1">
+            <div class="card-text">The Waffle Shop in downtown</div>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/200" alt="Image 2">
-            <div class="card-text">Image 2</div>
+            <img src="assets/images/gallery-images/IMG_0924.JPG" alt="Image 2">
+            <div class="card-text">4th of July Fireworks @ PSU</div>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 3">
-            <div class="card-text">Image 3</div>
+            <img src="assets/images/gallery-images/IMG_1140.JPG" alt="Image 3">
+            <div class="card-text">Campus Squirrel eating fries</div>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 4">
-            <div class="card-text">Image 4</div>
+            <img src="assets/images/gallery-images/IMG_1987.jpg" alt="Image 4">
+            <div class="card-text">Old Main</div>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 5">
-            <div class="card-text">Image 5</div>
+            <img src="assets/images/gallery-images/IMG_2308.jpg" alt="Image 5">
+            <div class="card-text">Christmas Market in Pittsburgh</div>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 6">
+            <img src="https://via.placeholder.com/250" alt="Image 6">
             <div class="card-text">Image 6</div>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 7">
+            <img src="https://via.placeholder.com/250" alt="Image 7">
             <div class="card-text">Image 7</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 8">
-            <div class="card-text">Image 8</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 9">
-            <div class="card-text">Image 9</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 10">
-            <div class="card-text">Image 10</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 11">
-            <div class="card-text">Image 11</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 12">
-            <div class="card-text">Image 12</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 13">
-            <div class="card-text">Image 13</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 14">
-            <div class="card-text">Image 14</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 15">
-            <div class="card-text">Image 15</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 16">
-            <div class="card-text">Image 16</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 17">
-            <div class="card-text">Image 17</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 18">
-            <div class="card-text">Image 18</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 19">
-            <div class="card-text">Image 19</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 20">
-            <div class="card-text">Image 20</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 21">
-            <div class="card-text">Image 21</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 22">
-            <div class="card-text">Image 22</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 23">
-            <div class="card-text">Image 23</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 24">
-            <div class="card-text">Image 24</div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Image 25">
-            <div class="card-text">Image 25</div>
         </div>
     </div>
 
+    <!-- Popup Container -->
+    <div class="popup-image" id="popup-image">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <img id="popup-img" src="" alt="Popup Image">
+    </div>
+
+    <script>
+        // JavaScript for handling image click events
+        const popup = document.getElementById('popup-image');
+        const popupImg = document.getElementById('popup-img');
+        const closeBtn = document.getElementById('close-btn');
+
+        document.querySelectorAll('.card img').forEach(image => {
+            image.addEventListener('click', () => {
+                popup.style.display = 'flex';
+                popupImg.src = image.src;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        popup.addEventListener('click', (e) => {
+            if (e.target !== popupImg && e.target !== closeBtn) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

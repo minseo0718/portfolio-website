@@ -561,6 +561,22 @@ span{
   text-decoration: underline;
 }
 
+/* gallery section */
+
+.gallery h2 {
+  text-align: center;
+  color: #fff;
+  line-height: var(--line-height);
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.gallery p {
+  text-align: center;
+  color: var(--secondary-color);
+  text-decoration: underline;
+  font-size: 20px;
+}
+
 /* contact section */
 
 .contact {
