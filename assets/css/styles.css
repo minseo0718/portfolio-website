@@ -353,12 +353,12 @@ span{
 
 .timeline ul li {
   display: flex;
-  align-items: flex-start; /* Align items to the top */
-  justify-content: space-between; /* Pushes the image to the right */
+  align-items: flex-start; 
+  justify-content: space-between; 
   padding: 18px;
   background-color: #656565;
   border-radius: 10px;
-  margin-bottom: 20px; /* Increased margin to create space between items */
+  margin-bottom: 20px; 
   position: relative;
 }
 
@@ -389,7 +389,7 @@ span{
 }
 
 .timeline-content {
-  flex: 1; /* Allows the content to take up remaining space */
+  flex: 1; 
 }
 
 .timeline-content p {
@@ -401,7 +401,7 @@ span{
 .work-image {
   width: 250px; 
   height: auto;
-  margin-left: 20px; /* Adds space between the text and the image */
+  margin-left: 20px; 
   border-radius: 10px;
   align-self: flex-end;
 }
@@ -409,17 +409,17 @@ span{
 .work-image-2 {
   width: 200px; 
   height: auto;
-  margin-left: 20px; /* Adds space between the text and the image */
+  margin-left: 20px; 
   border-radius: 10px;
   align-self: flex-end;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   .img-box {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
   .timeline-container::before{
     content:'';
@@ -496,44 +496,43 @@ span{
   margin-bottom: 1rem;
 }
 
-/* Container for the cards */
+
 .card-container {
   width: 100%;
-  max-width: 1200px; /* Limit the width of the cards */
+  max-width: 1200px; 
   margin: 0 auto;
   position: relative; 
-  display: flex; /* Use flexbox for card layout */
-  flex-wrap: wrap; /* Allow wrapping to next line if needed */
-  gap: 20px; /* Space between cards */
-  justify-content: center; /* Center the cards */
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; 
 }
 
-/* Style for each card item */
 .card-container ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Use flexbox for card layout */
-  gap: 20px; /* Space between cards */
-  flex-wrap: wrap; /* Wrap items to the next line */
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: wrap; 
 }
 
 .card-container ul li {
-  flex: 1 1 calc(33.333% - 20px); /* Three cards per row, adjust space for gaps */
+  flex: 1 1 calc(33.333% - 20px); 
   padding: 20px;
   background-color: #656565;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for card effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   box-sizing: border-box;
 }
 
-/* Ensure no margin on last item */
+
 .card-container ul li:last-child {
   margin-bottom: 0;
 }
 
-/* Styling for the card content */
+
 .card-content h3 {
   font-size: 22px;
   font-weight: 600;
